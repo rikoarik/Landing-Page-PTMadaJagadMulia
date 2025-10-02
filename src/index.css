@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Brand Colors - PT Mada Jagad Mulia */
+    --brand-green: 142 71% 33%; /* #2E7D32 */
+    --brand-yellow: 46 97% 58%; /* #FBC02D */
+    --brand-red: 4 79% 56%; /* #E53935 */
+    
+    /* Glassmorphism Backgrounds */
+    --glass-bg: 0 0% 100% / 0.05;
+    --glass-bg-light: 0 0% 100% / 0.1;
+    --glass-bg-strong: 0 0% 100% / 0.15;
+    --glass-border: 0 0% 100% / 0.2;
+    
+    /* Base Colors */
+    --background: 142 20% 96%;
+    --foreground: 142 71% 15%;
+
+    --card: 0 0% 100% / 0.1;
+    --card-foreground: 142 71% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 142 71% 15%;
+
+    --primary: 142 71% 33%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 142 71% 45%;
+
+    --secondary: 46 97% 58%;
+    --secondary-foreground: 142 71% 15%;
+
+    --accent: 4 79% 56%;
+    --accent-foreground: 0 0% 100%;
+
+    --muted: 142 20% 90%;
+    --muted-foreground: 142 20% 40%;
+
+    --destructive: 4 79% 56%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 100% / 0.2;
+    --input: 0 0% 100% / 0.1;
+    --ring: 142 71% 33%;
+
+    --radius: 1rem;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(142 71% 33%), hsl(142 71% 45%));
+    --gradient-accent: linear-gradient(135deg, hsl(142 71% 33%), hsl(46 97% 58%));
+    --gradient-hero: linear-gradient(180deg, hsl(142 20% 96% / 0), hsl(142 20% 96%));
+    
+    /* Shadows */
+    --shadow-glass: 0 8px 32px 0 hsl(142 71% 33% / 0.1);
+    --shadow-glass-strong: 0 8px 32px 0 hsl(142 71% 33% / 0.2);
+    --shadow-glow: 0 0 40px hsl(142 71% 45% / 0.3);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-['Poppins',sans-serif];
+    font-feature-settings: "liga" 1, "calt" 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}

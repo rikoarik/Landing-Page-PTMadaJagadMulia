@@ -133,6 +133,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-PT Mada Jagad Mulia - [Website](https://madajagadmulia.com)
-
 Project Link: [https://github.com/rikoarik/Landing-Page-Mada-Jagad-Mulia](https://github.com/rikoarik/Landing-Page-Mada-Jagad-Mulia)
